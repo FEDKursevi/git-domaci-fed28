@@ -1,0 +1,58 @@
+@import "vars";
+@import "mixins";
+
+* {
+  @include reset;
+}
+
+body {
+  font-family: $font;
+  color: $font-color;
+}
+
+.clr {
+  clear: both;
+}
+
+.navigation {
+  float: left;
+  width: 100%;
+  height: 80px;
+  overflow: auto;
+  background: $dark-blue;
+  color: white;
+
+  .logo {
+    float: left;
+    padding-left: 0.5rem;
+    padding-right: 6rem;
+    background: #f75311;
+    img {
+      width: 80px;
+      height: 80px;
+      float: left;
+    }
+
+    span {
+      float: left;
+      line-height: 80px;
+    }
+  }
+
+  ul {
+    float: left;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
+    li {
+      list-style: none;
+      float: left;
+      margin-left: 4rem;
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    }
+  }
+}
