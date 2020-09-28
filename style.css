@@ -54,4 +54,25 @@ nav ul li a:hover {
   color: #f75311;
 }
 
+.intro {
+  height: 800px;
+  width: 100%;
+  background: url("../slike/intro.jpg") no-repeat center center/cover;
+  position: relative;
+}
+
+.intro-div {
+  text-align: center;
+  color: white;
+  background-color: #3c4043;
+  opacity: 0.6;
+  height: 120px;
+  width: 70%;
+  position: absolute;
+  padding-top: 5px;
+  bottom: 180px;
+  left: 350px;
+  font-size: 25pt;
+}
+
 /*# sourceMappingURL=style.css.map */
