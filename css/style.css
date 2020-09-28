@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+* {
+  font-family: "Roboto";
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+main {
+  width: 90%;
+  margin: auto;
+}
+
+nav {
+  background: #374249;
+  width: 80%;
+  margin: auto;
+}
+nav ul {
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul li:first-child {
+  background-color: #f75311;
+  width: 20%;
+  height: 2.7em;
+}
+nav ul li:first-child a {
+  vertical-align: top;
+}
+nav ul li {
+  display: inline-block;
+  height: auto;
+  vertical-align: middle;
+  padding: 0 2%;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+section {
+  margin: auto;
+  width: 88.9%;
+}
+
+.section1 {
+  background-image: url("../slike/intro.jpg");
+  height: 40em;
+  position: relative;
+  margin-bottom: 2em;
+}
+.section1 .naslovniDeo {
+  width: 100%;
+  text-align: center;
+  padding-top: 25%;
+}
+.section1 .naslovniDeo h1 {
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  color: white;
+  font-size: 2em;
+  margin-bottom: 0;
+}
+.section1 .naslovniDeo h4 {
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  margin-top: 0;
+}
+
+.section2 {
+  background: #d8d2d2;
+  padding: 30px;
+}
+.section2 .slike {
+  display: inline-block;
+}
+.section2 .slike .img_wrap {
+  display: inline-block;
+  width: 20%;
+  position: relative;
+}
+.section2 .slike .img_wrap img {
+  display: inline-block;
+  height: 20em;
+  padding: 20px;
+}
+.section2 .slike .img_wrap .img__description {
+  width: 99.5%;
+  height: 5em;
+  position: absolute;
+  top: 3px;
+  left: 20px;
+  right: 0;
+  background: rgba(255, 255, 255, 0.5);
+  color: black;
+  visibility: hidden;
+  opacity: 0;
+  text-align: center;
+}
+.section2 .slike .img_wrap:hover .img__description {
+  visibility: visible;
+  opacity: 1;
+}
+
+.section3 {
+  text-align: center;
+}
+.section3 .naslov h2 {
+  font-weight: bold;
+}
+.section3 .table {
+  text-align: center;
+  margin: auto;
+  width: 60%;
+  height: 20%;
+}
+.section3 .table .crvenaPozadina {
+  background: #f75311;
+  color: white;
+}
+.section3 .table .crnaPozadina {
+  background: #374249;
+  color: white;
+}
+
+table, tr, td {
+  border: 1px solid #726f6f;
+  border-collapse: collapse;
+}
+
+.nevidljiva {
+  visibility: hidden;
+}
+
+.section4 {
+  background: #d8d2d2;
+}
+.section4 .naslov {
+  text-align: center;
+  font-weight: bold;
+}
+.section4 .mapa {
+  display: inline-block;
+  margin-left: 10px;
+  padding-right: 20px;
+}
+.section4 .form {
+  vertical-align: top;
+  padding: 20px;
+  display: inline-block;
+  background: #f75311;
+  width: 36em;
+  height: 15em;
+  margin-left: 5em;
+}
+.section4 .form #gender {
+  width: 32%;
+  height: 30%;
+}
+.section4 .form #name {
+  width: 67%;
+  height: 30%;
+}
+.section4 .form #email {
+  display: block;
+  margin-top: 3em;
+  width: 100%;
+  height: 30%;
+}
+.section4 .form textarea {
+  display: block;
+  margin-top: 3em;
+  width: 100%;
+  height: 30%;
+}
+
+.opcije {
+  width: 89%;
+  text-align: right;
+}
+.opcije p {
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 15px;
+  background-color: white;
+  text-align: center;
+  padding: 10px 25px;
+}
+.opcije p:hover {
+  background: gray;
+}
+.opcije p a {
+  text-decoration: none;
+}
+.opcije p a:hover {
+  color: white;
+}
+
+footer {
+  margin-top: 20px;
+  text-align: center;
+  background-color: #374249;
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */

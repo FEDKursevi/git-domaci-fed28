@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>HomeExchange</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+    </style>
+        
+        
+        
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#map"><i class="material-icons">place</i>New York</a></li>
+            <li><a href="#">Rent</a></li>
+            <li><a href="#">Buy</a></li>
+            <li><a href="#">Sell</a></li>
+            <li><a href="#message">Messages</a></li>
+        </ul>
+
+    </nav>
+    <main>     
+        <section class="section1">
+            <div class="naslovniDeo">
+                <h1>Welcome to HomeExchange</h1>
+                <h4>Your fastest way to find or sell home online.</h4>
+            </div>
+        </section>
+
+        <div class="opcije">
+            <p><a href="#">100$-300$</a></p>
+            <p><a href="#">1 bedroom</a></p>
+            <p><a href="#">Garage</a></p>
+        </div>
+
+        <section class="section2">
+            <div class="slike">
+                <div class="img_wrap">
+                    <img class="img__img" src="slike/1.jpg">
+                    <p class="img__description">Tri hiljade dolara <br> 3000$</p>
+                </div>
+
+                <div class="img_wrap">
+                    <img class="img__img" src="slike/2.jpg">
+                    <p class="img__description">Dve hiljade dolara <br> 2000$</p>
+                </div>
+
+                <div class="img_wrap">
+                    <img class="img__img" src="slike/3.jpg">
+                    <p class="img__description">Jedna hiljada dolara <br> 1000$</p>
+                </div>
+
+                <div class="img_wrap">
+                    <img class="img__img" src="slike/4.jpg">
+                    <p class="img__description">Cetiri i po hiljade dolara <br> 4500$</p>
+                </div>
+
+                <div class="img_wrap">
+                    <img class="img__img" src="slike/5.jpg">
+                    <p class="img__description">Dve hiljade i trista dolara<br>2300$</p>
+                </div>
+
+                <div class="img_wrap">
+                    <img class="img__img" src="slike/6.jpg">
+                    <p class="img__description">Devet stotina dolara<br>900$</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section3">
+            <div class="naslov">
+                <h2>PRICING</h2>
+                <p>Our service prices in New York</p>
+            </div>
+            <div class="tabela"> 
+                <table class="table">
+                    <tr>
+                        <th colspan="2" class="nevidljiva"></th>
+                        <td colspan="2" class="crvenaPozadina">Price</th>
+                    </tr>
+                    <tr>
+                        <th colspan="2" class="nevidljiva"></th>
+                        <td class="crnaPozadina">Rent/Buy</td>
+                        <td class="crnaPozadina">Sell</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3" class="crvenaPozadina">Location</td>
+                        <td class="crnaPozadina">Downtown</td>
+                        <td>3$</td>
+                        <td>3$</td>
+                    </tr>
+                    <tr>
+                        <td class="crnaPozadina">Center</td>
+                        <td>3$</td>
+                        <td>3$</td>
+                    </tr>
+                    <tr>
+                        <td class="crnaPozadina">Manhattan</td>
+                        <td>3$</td>
+                        <td>3$</td>
+                    </tr>                   
+                </table>
+
+            </div>
+        </section>
+        <section class="section4">
+            <div class="naslov">
+                <h2>CONTACT US</h2>
+            </div>
+            <div class="wrap">
+                <div class="mapa" id="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d24191.646474060068!2d-73.9939492!3d40.7189893!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2srs!4v1601304700685!5m2!1sen!2srs" width="350" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+                <div class="form">
+                    <form name="forma" action="/action_page.php">
+                        <select id="gender" name="gender">
+                            <option value="mr.">Mr</option>
+                            <option value="mrs">Mrs</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <input type="text" id="name" placeholder="Your name" required>
+                        <input type="text" id="email" placeholder="Your email">
+                        <textarea id="message" name="message" placeholder="Your message"></textarea>
+
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        Copyright © 2016 <a href="#" style="color:red; text-decoration:none;">HomeExchange</a>
+
+    </footer>
+    
+</body>
+</html>
