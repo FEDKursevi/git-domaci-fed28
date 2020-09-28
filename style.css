@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "$font-main";
+  font-family--webkit-box-sizing: border-box;
+  font-family--moz-box-sizing: border-box;
+  font-family-box-sizing: border-box;
+}
+
+.icon-div {
+  width: 20%;
+  height: 70px;
+  background-color: #f75311;
+  float: left;
+}
+
+.icon {
+  height: 50px;
+  margin-right: 5px;
+  float: left;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+h1 {
+  font-size: 15pt;
+  color: white;
+  float: left;
+  margin-top: 20px;
+  text-decoration: underline;
+}
+
+nav {
+  width: 100%;
+  height: 70px;
+  background-color: #374249;
+}
+nav ul {
+  list-style: none;
+  padding-top: 20px;
+}
+nav ul li {
+  display: inline;
+  padding: 0 10 0 10;
+  font-size: 15pt;
+  margin-left: 30px;
+  padding-right: 50px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+nav ul li a:hover {
+  color: #f75311;
+}
+
+/*# sourceMappingURL=style.css.map */
