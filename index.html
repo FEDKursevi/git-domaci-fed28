@@ -8,6 +8,27 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
+
+    <script>
+      // Initialize and add the map
+      function initMap() {
+        // The location of Uluru
+        var uluru = { lat: -25.344, lng: 131.036 };
+        // The map, centered at Uluru
+        var map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 4,
+          center: uluru,
+        });
+        // The marker, positioned at Uluru
+        var marker = new google.maps.Marker({ position: uluru, map: map });
+      }
+    </script>
+
+    <script
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhraWk8DDV1ZXTgBLxyWS4o0IAyV17ymQ&callback=initMap"
+    ></script>
+
     <title>Document</title>
   </head>
   <body>
@@ -33,6 +54,8 @@
         <h4>Your fastest way to buy or sell home online</h4>
       </div>
     </section>
+
+    <div class="clr"></div>
     <section class="buttons">
       <a href="#">1200$ - 4000$</a>
       <a href="#">1 + Bedroom</a>
@@ -41,14 +64,53 @@
 
     <section class="images">
       <div class="row">
-        <div class="image image1"></div>
-        <div class="image image2"></div>
-        <div class="image image3"></div>
-        <div class="image image4"></div>
-        <div class="image image5"></div>
-        <div class="image image6"></div>
+        <div class="image image1">
+          <div class="img-hover">
+            <h2>Loft apartment</h2>
+            <h3>3000$</h3>
+          </div>
+        </div>
+        <div class="image image2">
+          <div class="img-hover">
+            <h2>Loft apartment</h2>
+            <h3>3000$</h3>
+          </div>
+        </div>
+        <div class="image image3">
+          <div class="img-hover">
+            <h2>Loft apartment</h2>
+            <h3>3000$</h3>
+          </div>
+        </div>
+        <div class="image image4">
+          <div class="img-hover">
+            <h2>Loft apartment</h2>
+            <h3>3000$</h3>
+          </div>
+        </div>
+        <div class="image image5">
+          <div class="img-hover">
+            <h2>Loft apartment</h2>
+            <h3>3000$</h3>
+          </div>
+        </div>
+        <div class="image image6">
+          <div class="img-hover">
+            <h2>Loft apartment</h2>
+            <h3>3000$</h3>
+          </div>
+        </div>
       </div>
     </section>
+
+    <div class="clr"></div>
+
+    <div class="table-heading">
+      <h1>pricing</h1>
+      <h3>Our service prices in New York</h3>
+
+      <a class="table-button" href="#">Check the prices</a>
+    </div>
 
     <section class="table">
       <table>
@@ -61,29 +123,53 @@
         <tr>
           <td class="hidden"></td>
           <td class="hidden"></td>
-          <td class="dark-blue">1 year</td>
-          <td class="dark-blue">1 year</td>
+          <td class="dark-blue">Rent/Buy</td>
+          <td class="dark-blue">Sell</td>
         </tr>
 
         <tr>
           <td class="red" rowspan="3">Location</td>
-          <td class="dark-blue">Startup</td>
-          <td>3000$</td>
-          <td>3000$</td>
+          <td class="dark-blue">Downtown</td>
+          <td>3$</td>
+          <td>3$</td>
         </tr>
 
         <tr>
-          <td class="dark-blue">Small business</td>
-          <td>3000$</td>
-          <td>3000$</td>
+          <td class="dark-blue">Center</td>
+          <td>3$</td>
+          <td>3$</td>
         </tr>
 
         <tr>
-          <td class="dark-blue">Medium Business</td>
-          <td>3000$</td>
-          <td>3000$</td>
+          <td class="dark-blue">Manhattan</td>
+          <td>3$</td>
+          <td>3$</td>
         </tr>
       </table>
     </section>
+
+    <section class="contact">
+      <div class="contact-map">
+        <div id="map"></div>
+      </div>
+
+      <div class="contact-form">
+        <form action="">
+          <select name="" id="">
+            <option value="mr">MR.</option>
+            <option value="m">MS.</option>
+          </select>
+          <input type="text" placeholder="Your name" />
+          <input type="email" placeholder="Your email" />
+          <textarea name="" id="" placeholder="Message"></textarea>
+        </form>
+      </div>
+    </section>
+
+    <div class="clr"></div>
+
+    <footer>
+      <p>Copyright 2016 HomeExchange</p>
+    </footer>
   </body>
 </html>
