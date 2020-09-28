@@ -52,6 +52,7 @@ nav ul li a {
 }
 nav ul li a:hover {
   color: #f75311;
+  text-decoration: underline;
 }
 
 .intro {
@@ -73,6 +74,36 @@ nav ul li a:hover {
   bottom: 180px;
   left: 350px;
   font-size: 25pt;
+}
+
+.midle {
+  height: 40px;
+  width: 100%;
+  background-color: white;
+  color: #374249;
+  display: inline-block;
+}
+
+.midle-link {
+  float: right;
+  border: 1px solid #3c4043;
+  color: white;
+  padding: 15px;
+  margin-top: 40px;
+  margin-right: 100px;
+  border-radius: 25px 25px;
+  overflow: hidden;
+  width: 130px;
+  text-align: center;
+  font-size: 14pt;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  background-color: #3c4043;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

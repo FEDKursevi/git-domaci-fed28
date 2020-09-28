@@ -57,6 +57,7 @@ nav {
         color: $color-heading;
         &:hover {
           color: $background-main;
+          text-decoration: underline;
         }
       }
     }
@@ -82,4 +83,34 @@ nav {
   bottom: 180px;
   left: 350px;
   font-size: 25pt;
+}
+
+.midle {
+  height: 40px;
+  width: 100%;
+  background-color: $color-heading;
+  color: $background-nav;
+  display: inline-block;
+}
+
+.midle-link {
+  float: right;
+  border: 1px solid $background-intro;
+  color: $color-heading;
+  padding: 15px;
+  margin-top: 40px;
+  margin-right: 100px;
+  border-radius: 25px 25px;
+  overflow: hidden;
+  width: 130px;
+  text-align: center;
+  font-size: 14pt;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    background-color: $background-intro;
+    color: $color-heading;
+  }
 }
