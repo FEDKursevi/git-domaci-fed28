@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+}
+header .NYC, header .nav-linkovi {
+  float: left;
+  height: 40px;
+}
+header .NYC {
+  background-color: #f75311;
+  width: 20%;
+  padding-left: 5%;
+  padding-top: 12px;
+}
+header .NYC a {
+  text-decoration: none;
+  color: white;
+}
+header .NYC a:hover {
+  text-decoration: underline;
+}
+header .nav-linkovi {
+  background-color: #374249;
+  width: 80%;
+  list-style: none;
+}
+header .nav-linkovi li {
+  display: inline-block;
+  padding-left: 3%;
+  padding-top: 12px;
+}
+header .nav-linkovi li a {
+  color: white;
+  text-decoration: none;
+}
+header .nav-linkovi li a:hover {
+  text-decoration: underline;
+}
+
+.intro_with_img {
+  height: 37em;
+  width: 100%;
+  background-image: url("../slike/intro.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.intro_with_img .intro {
+  text-align: center;
+  color: white;
+  background-color: rgba(128, 128, 128, 0.623);
+  padding: 20px 40px 20px 40px;
+}
+.intro_with_img .intro span {
+  color: orangered;
+}
+
+.white-btn {
+  background-color: white;
+  height: 40px;
+}
+.white-btn .btn {
+  float: right;
+  width: 40%;
+  padding-top: 6px;
+}
+.white-btn .btn p {
+  display: inline-block;
+  padding: 4px 6px 4px 6px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin-left: 3%;
+}
+.white-btn .btn p:hover {
+  cursor: pointer;
+  background-color: gray;
+  color: white;
+}
+
+.sekcija {
+  background-color: #f3f7f9;
+}
+.sekcija .grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  width: 60%;
+  margin: 0 auto;
+  background-color: #f3f7f9;
+}
+.sekcija .grid div {
+  margin: 10% auto;
+  position: relative;
+}
+.sekcija .grid div img {
+  width: 90%;
+  height: 264px;
+}
+.sekcija .grid div .hover {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
+  background-color: rgba(128, 128, 128, 0.473);
+  color: black;
+  padding-left: 10px;
+}
+.sekcija .grid .grid5, .sekcija .grid .grid6 {
+  margin-top: -5%;
+}
+.sekcija .grid div:hover .hover {
+  visibility: visible;
+}
+
+.sekcija_cene .pricing {
+  text-align: center;
+  margin-top: 5%;
+}
+.sekcija_cene .title {
+  text-align: center;
+  margin-top: 5%;
+}
+.sekcija_cene table {
+  width: 40%;
+  margin: 5% auto;
+  color: white;
+  border-collapse: collapse;
+}
+.sekcija_cene table .orange {
+  background-color: #f75311;
+  text-align: center;
+  border: 1px solid black;
+}
+.sekcija_cene table .gray {
+  background-color: #374249;
+  text-align: center;
+  border: 1px solid black;
+}
+.sekcija_cene table .price {
+  text-align: center;
+  border: 1px solid black;
+}
+
+.con-con {
+  background-color: #f3f7f9;
+  padding-top: 10px;
+}
+.con-con .contact-us {
+  text-align: center;
+}
+.con-con .contact-grid {
+  text-align: center;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 10px;
+}
+.con-con .contact-grid .google-map {
+  text-align: center;
+  margin: 10px auto;
+}
+.con-con .contact-grid .google-map iframe {
+  width: 350px;
+  height: 350px;
+}
+.con-con .contact-grid .contact-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.con-con .contact-grid .contact-form form {
+  float: left;
+  width: 500px;
+  height: 80opx;
+  padding: 10px;
+  background-color: orangered;
+  text-align: left;
+}
+.con-con .contact-grid .contact-form form .name {
+  float: right;
+  padding: 5px;
+  margin-left: 10px;
+  width: 80%;
+}
+.con-con .contact-grid .contact-form form .mail, .con-con .contact-grid .contact-form form .text {
+  width: 100%;
+  margin-top: 10px;
+  padding: 5px;
+}
+
+footer {
+  text-align: center;
+  background-color: #374249;
+  color: white;
+}
+footer span {
+  color: orangered;
+}
+
+@media screen and (max-width: 800px) {
+  .white-btn .btn {
+    float: right;
+    width: 49%;
+  }
+
+  .sekcija .grid {
+    grid-template-columns: auto auto;
+  }
+
+  .con-con .contact-grid {
+    grid-template-columns: auto;
+  }
+}
+@media screen and (max-width: 650px) {
+  header .NYC {
+    background-color: #f75311;
+    width: 100%;
+    text-align: center;
+  }
+  header .nav-linkovi {
+    background-color: #374249;
+    width: 100%;
+    list-style: none;
+    height: auto;
+  }
+  header .nav-linkovi li {
+    display: block;
+    text-align: center;
+    padding-left: auto;
+  }
+
+  .white-btn .btn {
+    text-align: center;
+    float: none;
+    width: 100%;
+  }
+
+  .sekcija .grid {
+    grid-template-columns: auto;
+  }
+}
+
+/*# sourceMappingURL=stil.css.map */

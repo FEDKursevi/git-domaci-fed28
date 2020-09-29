@@ -1,0 +1,249 @@
+@import '../mixinsIgorica';
+@import '../varsIgorica';
+
+@include main;
+
+header{
+    width: 100%;
+    .NYC, .nav-linkovi{
+        float: left;
+        height: 40px;
+    }
+    .NYC{
+        background-color: #f75311;
+        width: 20%;
+        padding-left: 5%;
+        padding-top: 12px;
+        a{
+            text-decoration: none; 
+            color: white;
+        }
+        a:hover {
+            text-decoration:underline;
+        }
+    }
+    .nav-linkovi{
+        background-color:#374249;
+        width: 80%;
+        list-style: none;
+        li{
+            display: inline-block;
+            padding-left: 3%;
+            padding-top: 12px;
+            a{
+                color: white;
+                text-decoration: none; 
+            }
+            a:hover {
+                text-decoration:underline;
+            }
+        }
+    }
+}
+.intro_with_img{
+    height: 37em;
+    width: 100%;
+    background-image: url('../slike/intro.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .intro{
+        text-align: center;
+        color: white;
+        background-color: rgba(128, 128, 128, 0.623);
+        padding: 20px 40px 20px 40px;
+        span{
+            color: orangered;
+        }
+    }
+}
+.white-btn{
+    background-color: white;
+    height: 40px;
+    .btn{
+        float: right;
+        width: 40%;
+        padding-top: 6px;
+        p{
+            display: inline-block;
+            padding: 4px 6px 4px 6px;
+            border: 1px solid gray;
+            border-radius: 10px;
+            margin-left: 3%;
+        }
+        p:hover{
+            cursor: pointer;
+            background-color: gray;
+            color: white;
+        }
+    }
+}
+.sekcija{
+    background-color: #f3f7f9;
+    .grid{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        width: 60%;
+        margin: 0 auto;
+        background-color: #f3f7f9;
+        div{
+            margin: 10% auto;
+            position: relative;
+            img{
+                width: 90%; 
+                height: 264px;
+            }
+            .hover{
+                visibility: hidden;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 90%;
+                background-color: rgba(128, 128, 128, 0.473);
+                color: black;
+                padding-left: 10px;
+            }
+        }
+        .grid5, .grid6{
+            margin-top: -5%;
+        }
+        div:hover{
+                .hover {visibility: visible;}
+        }
+    }
+}
+.sekcija_cene{
+    .pricing{
+        text-align: center;
+        margin-top: 5%;
+    }
+    .title{
+        text-align: center;
+        margin-top: 5%;
+    }
+    table{
+        width:40%;
+        margin: 5% auto;
+        color: white;
+        border-collapse: collapse;
+        .orange{
+            background-color:#f75311;
+            text-align: center;
+            border: 1px solid black;
+        }
+        .gray{
+            background-color: #374249;
+            text-align: center;
+            border: 1px solid black;
+        }
+        .price{
+            text-align: center;
+            border: 1px solid black;
+        }
+    }
+}
+.con-con{
+    background-color: #f3f7f9;
+    padding-top: 10px;
+    .contact-us{
+        text-align: center;
+    }
+    .contact-grid{
+        text-align: center;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-column-gap:10px;
+        .google-map{
+            text-align: center;
+            margin: 10px auto;
+            iframe{
+                width: 350px;
+                height: 350px;
+            }
+        }
+        .contact-form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            form{
+                float:left;
+                width: 500px;
+                height: 80opx;
+                padding: 10px;
+                background-color: orangered;
+                text-align: left;
+                .name{
+                    float: right;
+                    padding: 5px;
+                    margin-left: 10px;  
+                    width: 80%;
+                }
+                .mail, .text {
+                    width: 100%;
+                    margin-top: 10px;
+                    padding: 5px;
+                }
+            }
+        }
+    }
+}
+footer{
+    text-align: center;
+    background-color:  #374249;
+    color: white;
+    span{
+        color: orangered;
+    }
+}
+@media screen and (max-width:800px){
+    .white-btn{
+        .btn{
+            float: right;
+            width: 49%;
+        }
+    }
+    .sekcija{
+        .grid{
+            grid-template-columns: auto auto;
+        }
+    }
+    .con-con{
+        .contact-grid{
+            grid-template-columns: auto;
+        }
+    }
+}
+@media screen and (max-width:650px){
+    header{
+        .NYC{
+            background-color: #f75311;
+            width: 100%;
+            text-align: center;
+        }
+        .nav-linkovi{
+            background-color:#374249;
+            width: 100%;
+            list-style: none;
+            height: auto;
+            li{
+                display: block;
+                text-align: center;
+                padding-left: auto;
+            }
+        }
+    }
+    .white-btn{
+        .btn{
+            text-align: center;
+            float: none;
+            width: 100%;
+        }
+    }
+    .sekcija{
+        .grid{
+            grid-template-columns: auto ;
+        }
+    }
+}
