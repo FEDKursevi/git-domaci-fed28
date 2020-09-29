@@ -5,6 +5,7 @@
 * {
     font-family: $font;
     @include boxSizing;
+    @include main;
 }
 
 main {
@@ -101,25 +102,27 @@ section {
 
         .img_wrap {
             display:inline-block;
-            width:20%;
+            
             position:relative; 
             
             img{
                 display: inline-block;
                 height:20em;
-                padding:20px;
+                
 
                 
             }
             
             
             .img__description {
-               width:99.5%;
+                left:0;
+                right:0;
+                top:-1em;
+                bottom:0;
                 height:5em;
                 position: absolute;
-                top: 3px;                
-                left: 20px;
-                right: 0;
+                
+                
                 background: rgba(255, 255, 255, 0.5);
                 color: black;
                 visibility: hidden;
@@ -220,25 +223,25 @@ table, tr, td {
         
     p {
         display:inline-block;
-        border:1px solid black;
+        border:1px solid rgb(31, 30, 30);
         border-radius:15px;
         
         
         background-color: $fontBoja;
-        text-align: center;
-        
+        text-align: center;       
         padding:10px 25px;
 
         &:hover {
             background:gray;
+            a{
+                color:white;
+            }
            
         }
 
         a {
             text-decoration: none;
-            &:hover {
-                color:white;
-            }
+            
         }
         
         
