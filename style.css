@@ -7,48 +7,60 @@
   font-family-box-sizing: border-box;
 }
 
+header {
+  width: 100%;
+  height: 80px;
+  background-color: #374249;
+  display: inline-block;
+}
+
 .icon-div {
-  width: 20%;
-  height: 70px;
+  width: 380px;
+  height: 100%;
   background-color: #f75311;
   float: left;
 }
-
-.icon {
-  height: 50px;
-  margin-right: 5px;
+.icon-div img {
+  height: 40px;
+  padding: 20px;
   float: left;
-  margin-top: 10px;
-  margin-left: 20px;
+  width: 40px;
 }
-
-h1 {
+.icon-div h1 {
   font-size: 15pt;
   color: white;
   float: left;
-  margin-top: 20px;
+  font-size: 25pt;
+  padding: 20px 2px;
+  text-decoration: none;
+}
+.icon-div h1 a {
+  color: white;
+  background-color: #f75311;
+}
+.icon-div h1 a:hover {
   text-decoration: underline;
 }
 
 nav {
-  width: 100%;
-  height: 70px;
+  float: left;
   background-color: #374249;
+  padding-top: 25px;
 }
 nav ul {
   list-style: none;
-  padding-top: 20px;
 }
 nav ul li {
-  display: inline;
-  padding: 0 10 0 10;
+  display: inline-block;
+  padding: 0px 35px;
   font-size: 15pt;
-  margin-left: 30px;
+  margin-left: 40px;
   padding-right: 50px;
 }
 nav ul li a {
   text-decoration: none;
   color: white;
+  font-size: 20pt;
 }
 nav ul li a:hover {
   color: #f75311;
@@ -65,23 +77,23 @@ nav ul li a:hover {
 .intro-div {
   text-align: center;
   color: white;
-  background-color: #3c4043;
-  opacity: 0.6;
-  height: 120px;
+  background-color: rgba(225, 225, 225, 0.3);
+  height: 170px;
   width: 70%;
   position: absolute;
   padding-top: 5px;
-  bottom: 180px;
+  bottom: 220px;
   left: 350px;
-  font-size: 25pt;
+  font-size: 40pt;
 }
 
 .midle {
-  height: 40px;
+  height: 90px;
   width: 100%;
   background-color: white;
   color: #374249;
   display: inline-block;
+  margin-bottom: 40px;
 }
 
 .midle-link {
@@ -104,6 +116,68 @@ a {
 a:hover {
   background-color: #3c4043;
   color: white;
+}
+
+.pictures {
+  height: 1200px;
+  padding: 30px 300px;
+  background-color: #cac9c9;
+}
+
+.offer {
+  height: 500px;
+  width: 400px;
+  margin-right: 50px;
+  display: inline-block;
+}
+
+.slika img {
+  height: 100%;
+  width: 100%;
+}
+.slika img:hover {
+  opacity: 0.6;
+}
+
+.table-box {
+  margin: 0 auto;
+  margin-top: 40px;
+  height: 700px;
+  width: 100%;
+  background-color: #fff;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+  font-weight: 500;
+  font-size: larger;
+  width: 60%;
+}
+table tbody td {
+  padding: 1em;
+  background-color: #f75311;
+}
+table thead {
+  border: 1px solid #fff;
+}
+
+#hide {
+  background-color: honeydew;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-size: 35pt;
+  font-weight: 200;
+  text-align: center;
+}
+
+h5 {
+  font-weight: 600;
+  text-align: center;
+  color: #3c4043;
+  font-size: 20pt;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -3,12 +3,12 @@
 
 @include main;
 
-// header {
-//   width: 100%;
-//   height: 70px;
-//   background-color: #374249;
-//   display: inline-block;
-// }
+header {
+  width: 100%;
+  height: 80px;
+  background-color: #374249;
+  display: inline-block;
+}
 
 // header::after {
 //   content: "";
@@ -17,44 +17,50 @@
 // }
 
 .icon-div {
-  width: 20%;
-  height: 70px;
+  width: 380px;
+  height: 100%;
   background-color: $background-main;
   float: left;
-}
-
-.icon {
-  height: 50px;
-  margin-right: 5px;
-  float: left;
-  margin-top: 10px;
-  margin-left: 20px;
-}
-
-h1 {
-  font-size: 15pt;
-  color: $color-heading;
-  float: left;
-  margin-top: 20px;
-  text-decoration: underline;
+  img {
+    height: 40px;
+    padding: 20px;
+    float: left;
+    width: 40px;
+  }
+  h1 {
+    font-size: 15pt;
+    color: white;
+    float: left;
+    font-size: 25pt;
+    padding: 20px 2px;
+    text-decoration: none;
+    a {
+      color: white;
+      background-color: $background-main;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
 }
 
 nav {
-  width: 100%;
-  height: 70px;
+  float: left;
   background-color: $background-nav;
+  padding-top: 25px;
   ul {
     list-style: none;
-    padding-top: 20px;
+
     li {
-      display: inline;
-      padding: 0 10 0 10;
+      display: inline-block;
+      padding: 0px 35px;
       font-size: 15pt;
-      margin-left: 30px;
+      margin-left: 40px;
       padding-right: 50px;
       a {
         text-decoration: none;
         color: $color-heading;
+        font-size: 20pt;
         &:hover {
           color: $background-main;
           text-decoration: underline;
@@ -74,23 +80,23 @@ nav {
 .intro-div {
   text-align: center;
   color: $color-heading;
-  background-color: $background-intro;
-  opacity: 0.6;
-  height: 120px;
+  background-color: rgb(225, 225, 225, 0.3);
+  height: 170px;
   width: 70%;
   position: absolute;
   padding-top: 5px;
-  bottom: 180px;
+  bottom: 220px;
   left: 350px;
-  font-size: 25pt;
+  font-size: 40pt;
 }
 
 .midle {
-  height: 40px;
+  height: 90px;
   width: 100%;
   background-color: $color-heading;
   color: $background-nav;
   display: inline-block;
+  margin-bottom: 40px;
 }
 
 .midle-link {
@@ -113,4 +119,69 @@ a {
     background-color: $background-intro;
     color: $color-heading;
   }
+}
+//Deo sa slikama//
+.pictures {
+  height: 1200px;
+  padding: 30px 300px;
+  background-color: rgb(202, 201, 201);
+}
+
+.offer {
+  height: 500px;
+  width: 400px;
+  margin-right: 50px;
+  display: inline-block;
+}
+.slika {
+  img {
+    height: 100%;
+    width: 100%;
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+}
+//naredna sekcija//
+.table-box {
+  margin: 0 auto;
+  margin-top: 40px;
+  height: 700px;
+  width: 100%;
+  background-color: #fff;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+  font-weight: 500;
+  font-size: larger;
+  width: 60%;
+
+  tbody {
+    td {
+      padding: 1em;
+      background-color: $background-main;
+    }
+  }
+  thead {
+    border: 1px solid #fff;
+  }
+}
+
+#hide {
+  background-color: honeydew;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-size: 35pt;
+  font-weight: 200;
+  text-align: center;
+}
+h5 {
+  font-weight: 600;
+  text-align: center;
+  color: $background-intro;
+  font-size: 20pt;
 }
